@@ -1,0 +1,979 @@
+defined_text = {
+    name = get_president_or_pm_view
+	
+    text = {
+        trigger = {
+            has_country_flag = POL_is_on_prime_minister_view
+        }
+        localization_key = "POL_switch_to_president"
+    }
+	
+	text = {
+        trigger = {
+        }
+        localization_key = "POL_switch_to_pm"
+    }
+}
+
+defined_text = {
+    name = POLAND_get_pm_image
+	
+    text = {
+        trigger = {
+            has_country_flag = POL_donald_tusk_is_current_pm_flag
+        }
+        localization_key = "GFX_POL_Donald_Tusk_large"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_ewa_kopacz_is_current_pm_flag
+        }
+        localization_key = "GFX_POL_Ewa_Kopacz_large"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_beata_szydlo_is_current_pm_flag
+        }
+        localization_key = "GFX_POL_Beata_Szydlo_large"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_mateusz_morawiecki_is_current_pm_flag
+        }
+        localization_key = "GFX_POL_Mateusz_Morawiecki_large"
+    }
+	
+	text = {
+        trigger = {
+        }
+        localization_key = ""
+    }
+}
+
+
+defined_text = {
+    name = get_current_pm_name
+	
+    text = {
+        trigger = {
+            has_country_flag = POL_donald_tusk_is_current_pm_flag
+        }
+        localization_key = "POL_donald_tusk"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_ewa_kopacz_is_current_pm_flag
+        }
+        localization_key = "POL_ewa_kopacz"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_beata_szydlo_is_current_pm_flag
+        }
+        localization_key = "POL_beata_szydlo"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_mateusz_morawiecki_is_current_pm_flag
+        }
+        localization_key = "POL_mateusz_morawiecki"
+    }
+	
+	text = {
+        trigger = {
+        }
+        localization_key = "NO PM BLYAT"
+    }
+}
+
+defined_text = {
+    name = get_current_pm_trait
+	
+    text = {
+        trigger = {
+            has_country_flag = POL_donald_tusk_is_current_pm_flag
+        }
+        localization_key = "POL_donald_tusk_trait_tt"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_ewa_kopacz_is_current_pm_flag
+        }
+        localization_key = "POL_ewa_kopacz_trait_tt"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_beata_szydlo_is_current_pm_flag
+        }
+        localization_key = "POL_beata_szydlo_trait_tt"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_mateusz_morawiecki_is_current_pm_flag
+        }
+        localization_key = "POL_mateusz_morawiecki_trait_tt"
+    }
+	
+	text = {
+        trigger = {
+        }
+        localization_key = ""
+    }
+}
+defined_text = {
+    name = get_current_pm_tt_delayed
+	
+    text = {
+        trigger = {
+            has_country_flag = POL_donald_tusk_is_current_pm_flag
+        }
+        localization_key = "POL_donald_tusk_tt_delayed"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_ewa_kopacz_is_current_pm_flag
+        }
+        localization_key = "POL_ewa_kopacz_tt_delayed"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_beata_szydlo_is_current_pm_flag
+        }
+        localization_key = "POL_beata_szydlo_tt_delayed"
+    }
+	text = {
+        trigger = {
+            has_country_flag = POL_mateusz_morawiecki_is_current_pm_flag
+        }
+        localization_key = "POL_mateusz_morawiecki_tt_delayed"
+    }
+	
+	text = {
+        trigger = {
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_sejm_seat_party
+	text = {
+		trigger = {
+			check_variable = { sejm_seat_frame^seat_idx = 1 }
+		}
+		localization_key = "POL_seat_is_PO"
+	}
+	text = {
+		trigger = {
+			check_variable = { sejm_seat_frame^seat_idx = 2 }
+		}
+		localization_key = "POL_seat_is_PiS"
+	}
+	text = {
+		trigger = {
+			check_variable = { sejm_seat_frame^seat_idx = 3 }
+			has_country_flag = POL_rightist_party_is_kukiz
+		}
+		localization_key = "POL_seat_is_kukiz"
+	}
+	text = {
+		trigger = {
+			check_variable = { sejm_seat_frame^seat_idx = 3 }
+			has_country_flag = POL_rightist_party_is_konfederacja
+		}
+		localization_key = "POL_seat_is_KON"
+	}
+	text = {
+		trigger = {
+			check_variable = { sejm_seat_frame^seat_idx = 4 }
+			has_country_flag = POL_leftist_party_is_democratic_left_alliance
+		}
+		localization_key = "POL_seat_is_SLD"
+	}
+	text = {
+		trigger = {
+			check_variable = { sejm_seat_frame^seat_idx = 4 }
+			has_country_flag = POL_leftist_party_is_united_left
+		}
+		localization_key = "POL_seat_is_ZL"
+	}
+	text = {
+		trigger = {
+			check_variable = { sejm_seat_frame^seat_idx = 4 }
+			has_country_flag = POL_leftist_party_is_lewica
+		}
+		localization_key = "POL_seat_is_lewica"
+	}
+	text = {
+		trigger = {
+			check_variable = { sejm_seat_frame^seat_idx = 5 }
+		}
+		localization_key = "POL_seat_is_PSL"
+	}
+	
+	text = {
+		localization_key = "POL_seat_is_other"
+	}
+}
+
+defined_text = {
+	name = get_rightist_party
+	text = {
+		trigger = {
+			has_country_flag = POL_rightist_party_is_kukiz
+		}
+		localization_key = "POL_kukiz_long"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_rightist_party_is_konfederacja
+		}
+		localization_key = "POL_KON_long"
+	}
+}
+
+defined_text = {
+	name = get_leftist_party
+
+	text = {
+		trigger = {
+			has_country_flag = POL_leftist_party_is_democratic_left_alliance
+		}
+		localization_key = "POL_SLD_long"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_leftist_party_is_united_left
+		}
+		localization_key = "POL_ZL_long"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_leftist_party_is_lewica
+		}
+		localization_key = "POL_lewica_long"
+	}
+}
+
+defined_text = {
+	name = get_rightist_party_no_colour
+	text = {
+		trigger = {
+			has_country_flag = POL_rightist_party_is_kukiz
+		}
+		localization_key = "POL_kukiz_no_colour"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_rightist_party_is_konfederacja
+		}
+		localization_key = "POL_KON_no_colour"
+	}
+}
+
+defined_text = {
+	name = get_leftist_party_no_colour
+
+	text = {
+		trigger = {
+			has_country_flag = POL_leftist_party_is_democratic_left_alliance
+		}
+		localization_key = "POL_SLD_no_colour"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_leftist_party_is_united_left
+		}
+		localization_key = "POL_ZL_no_colour"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_leftist_party_is_lewica
+		}
+		localization_key = "POL_lewica_no_colour"
+	}
+}
+
+defined_text = {
+	name = get_rightist_party_no_colour_shortened
+	text = {
+		trigger = {
+			has_country_flag = POL_rightist_party_is_kukiz
+		}
+		localization_key = "POL_kukiz_no_colour_shortened"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_rightist_party_is_konfederacja
+		}
+		localization_key = "POL_KON_no_colour_shortened"
+	}
+}
+
+defined_text = {
+	name = get_leftist_party_no_colour_shortened
+
+	text = {
+		trigger = {
+			has_country_flag = POL_leftist_party_is_democratic_left_alliance
+		}
+		localization_key = "POL_SLD_no_colour_shortened"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_leftist_party_is_united_left
+		}
+		localization_key = "POL_ZL_no_colour_shortened"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_leftist_party_is_lewica
+		}
+		localization_key = "POL_lewica_no_colour_shortened"
+	}
+}
+
+
+
+defined_text = {
+	name = check_PO_in_power
+	text = {
+		trigger = {
+			check_variable = { var = POL_PO_seats value = 0 compare = greater_than }
+			has_country_flag = PO_in_power
+		}
+		localization_key = "POL_PO_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_PO_in_opposition
+	text = {
+		trigger = {
+			check_variable = { var = POL_PO_seats value = 0 compare = greater_than }
+			has_country_flag = PO_in_opposition
+		}
+		localization_key = "POL_PO_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_PO_neutral
+	text = {
+		trigger = {
+			check_variable = { var = POL_PO_seats value = 0 compare = greater_than }
+			NOT = { has_country_flag = PO_in_opposition }
+			NOT = { has_country_flag = PO_in_power }
+		}
+		localization_key = "POL_PO_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = check_PiS_in_power
+	text = {
+		trigger = {
+			check_variable = { var = POL_PiS_seats value = 0 compare = greater_than }
+			has_country_flag = PiS_in_power
+		}
+		localization_key = "POL_PiS_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_PiS_in_opposition
+	text = {
+		trigger = {
+			check_variable = { var = POL_PiS_seats value = 0 compare = greater_than }
+			has_country_flag = PiS_in_opposition
+		}
+		localization_key = "POL_PiS_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_PiS_neutral
+	text = {
+		trigger = {
+			check_variable = { var = POL_PiS_seats value = 0 compare = greater_than }
+			NOT = { has_country_flag = PiS_in_opposition }
+			NOT = { has_country_flag = PiS_in_power }
+		}
+		localization_key = "POL_PiS_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = check_RIGHT_in_power
+	text = {
+		trigger = {
+			check_variable = { var = POL_RIGHT_seats value = 0 compare = greater_than }
+			has_country_flag = RIGHT_in_power
+		}
+		localization_key = "POL_RIGHT_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_RIGHT_in_opposition
+	text = {
+		trigger = {
+			check_variable = { var = POL_RIGHT_seats value = 0 compare = greater_than }
+			has_country_flag = RIGHT_in_opposition
+		}
+		localization_key = "POL_RIGHT_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_RIGHT_neutral
+	text = {
+		trigger = {
+			check_variable = { var = POL_RIGHT_seats value = 0 compare = greater_than }
+			NOT = { has_country_flag = RIGHT_in_opposition }
+			NOT = { has_country_flag = RIGHT_in_power }
+		}
+		localization_key = "POL_RIGHT_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = check_LEFT_in_power
+	text = {
+		trigger = {
+			check_variable = { var = POL_LEFT_seats value = 0 compare = greater_than }
+			has_country_flag = LEFT_in_power
+		}
+		localization_key = "POL_LEFT_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_LEFT_in_opposition
+	text = {
+		trigger = {
+			check_variable = { var = POL_LEFT_seats value = 0 compare = greater_than }
+			has_country_flag = LEFT_in_opposition
+		}
+		localization_key = "POL_LEFT_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_LEFT_neutral
+	text = {
+		trigger = {
+			check_variable = { var = POL_LEFT_seats value = 0 compare = greater_than }
+			NOT = { has_country_flag = LEFT_in_opposition }
+			NOT = { has_country_flag = LEFT_in_power }
+		}
+		localization_key = "POL_LEFT_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = check_PSL_in_power
+	text = {
+		trigger = {
+			check_variable = { var = POL_PSL_seats value = 0 compare = greater_than }
+			has_country_flag = PSL_in_power
+		}
+		localization_key = "POL_PSL_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_PSL_in_opposition
+	text = {
+		trigger = {
+			check_variable = { var = POL_PSL_seats value = 0 compare = greater_than }
+			has_country_flag = PSL_in_opposition
+		}
+		localization_key = "POL_PSL_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = check_PSL_neutral
+	text = {
+		trigger = {
+			check_variable = { var = POL_PSL_seats value = 0 compare = greater_than }
+			NOT = { has_country_flag = PSL_in_opposition }
+			NOT = { has_country_flag = PSL_in_power }
+		}
+		localization_key = "POL_PSL_long_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+
+defined_text = {
+	name = are_there_any_non_aligned_seats_in_the_sejm
+	text = {
+		trigger = {
+			check_variable = { var = POL_OTHER_seats value = 0 compare = greater_than }
+		}
+		localization_key = "POL_seat_is_other_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = is_there_a_government_majority_in_sejm
+	text = {
+		trigger = {
+			set_temp_variable = { POL_seats_nedded_for_majority = POL_sejm_seat_count }
+			divide_temp_variable = { POL_seats_nedded_for_majority = 2 }
+			check_variable = { var = government_seats value = POL_seats_nedded_for_majority compare = greater_than }
+		}
+		localization_key = "UKR_rada_majority"
+	}
+	text = {
+        localization_key = "UKR_rada_minority"
+    }
+}
+
+
+defined_text = {
+	name = get_voivodeship_election_winner
+	text = {
+		trigger = {
+			check_variable = { THIS.state_PO_previous_election_popularity > THIS.state_PiS_previous_election_popularity }
+			check_variable = { THIS.state_PO_previous_election_popularity > THIS.state_RIGHT_previous_election_popularity }
+			check_variable = { THIS.state_PO_previous_election_popularity > THIS.state_LEFT_previous_election_popularity }
+			check_variable = { THIS.state_PO_previous_election_popularity > THIS.state_PSL_previous_election_popularity }
+			check_variable = { THIS.state_PO_previous_election_popularity > THIS.state_OTHER_previous_election_popularity }
+		}
+		localization_key = "POL_PO_long"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.state_PiS_previous_election_popularity > THIS.state_PO_previous_election_popularity }
+			check_variable = { THIS.state_PiS_previous_election_popularity > THIS.state_RIGHT_previous_election_popularity }
+			check_variable = { THIS.state_PiS_previous_election_popularity > THIS.state_LEFT_previous_election_popularity }
+			check_variable = { THIS.state_PiS_previous_election_popularity > THIS.state_PSL_previous_election_popularity }
+			check_variable = { THIS.state_PiS_previous_election_popularity > THIS.state_OTHER_previous_election_popularity }
+		}
+		localization_key = "POL_PiS_long"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.state_RIGHT_previous_election_popularity > THIS.state_PO_previous_election_popularity }
+			check_variable = { THIS.state_RIGHT_previous_election_popularity > THIS.state_PiS_previous_election_popularity }
+			check_variable = { THIS.state_RIGHT_previous_election_popularity > THIS.state_LEFT_previous_election_popularity }
+			check_variable = { THIS.state_RIGHT_previous_election_popularity > THIS.state_PSL_previous_election_popularity }
+			check_variable = { THIS.state_RIGHT_previous_election_popularity > THIS.state_OTHER_previous_election_popularity }
+		}
+		localization_key = "[POL.get_rightist_party]"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.state_LEFT_previous_election_popularity > THIS.state_PO_previous_election_popularity }
+			check_variable = { THIS.state_LEFT_previous_election_popularity > THIS.state_PiS_previous_election_popularity }
+			check_variable = { THIS.state_LEFT_previous_election_popularity > THIS.state_RIGHT_previous_election_popularity }
+			check_variable = { THIS.state_LEFT_previous_election_popularity > THIS.state_PSL_previous_election_popularity }
+			check_variable = { THIS.state_LEFT_previous_election_popularity > THIS.state_OTHER_previous_election_popularity }
+		}
+		localization_key = "[POL.get_leftist_party]"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.state_PSL_previous_election_popularity > THIS.state_PO_previous_election_popularity }
+			check_variable = { THIS.state_PSL_previous_election_popularity > THIS.state_PiS_previous_election_popularity }
+			check_variable = { THIS.state_PSL_previous_election_popularity > THIS.state_RIGHT_previous_election_popularity }
+			check_variable = { THIS.state_PSL_previous_election_popularity > THIS.state_LEFT_previous_election_popularity }
+			check_variable = { THIS.state_PSL_previous_election_popularity > THIS.state_OTHER_previous_election_popularity }
+		}
+		localization_key = "POL_PSL_long"
+	}
+	text = {
+        localization_key = "POL_minor_parties"
+    }
+}
+
+
+defined_text = {
+	name = get_2015_PiS_candidate
+	text = {
+		trigger = {
+			has_country_flag = Kaczynski_PiS_candidate_flag
+		}
+		localization_key = "POL_jaroslaw_kaczynski"
+	}
+	text = {
+		trigger = {
+			has_country_flag = Duda_PiS_candidate_flag
+		}
+		localization_key = "POL_andrzej_duda"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_ewa_kopacz_trait
+	text = {
+		trigger = {
+			has_country_flag = ewa_kopacz_shoes_to_fill_trait
+		}
+		localization_key = "POL_ewa_kopacz_trait_1"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_largest_centre_party
+	text = {
+		trigger = {
+			check_variable = { POL_LEFT_seats > POL_PO_seats }
+			check_variable = { POL_LEFT_seats > POL_PSL_seats }
+		}
+		localization_key = "[POL.get_leftist_party_no_colour]"
+	}
+	text = {
+		trigger = {
+			check_variable = { POL_PSL_seats > POL_PO_seats }
+			check_variable = { POL_PSL_seats > POL_LEFT_seats }
+		}
+		localization_key = "POL_PSL_no_colour"
+	}
+	text = {
+        localization_key = "POL_PO_no_colour"
+    }
+}
+
+defined_text = {
+	name = get_largest_right_party
+	text = {
+		trigger = {
+			check_variable = { POL_RIGHT_seats > POL_PiS_seats }
+		}
+		localization_key = "[POL.get_rightist_party_no_colour]"
+	}
+	text = {
+        localization_key = "POL_PiS_no_colour"
+    }
+}
+
+defined_text = {
+	name = get_PO_leader
+	text = {
+		trigger = {
+			has_country_flag = POL_donald_tusk_is_PO_leader
+		}
+		localization_key = "POL_donald_tusk"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_ewa_kopacz_is_PO_leader
+		}
+		localization_key = "POL_ewa_kopacz"
+	}
+	text = {
+        localization_key = "POL_no_party_leader"
+    }
+}
+
+defined_text = {
+	name = get_PiS_leader
+	text = {
+		trigger = {
+			has_country_flag = POL_beata_szydlo_is_PiS_leader
+		}
+		localization_key = "POL_beata_szydlo"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POL_mateusz_morawiecki_is_PiS_leader
+		}
+		localization_key = "POL_mateusz_morawiecki"
+	}
+	text = {
+        localization_key = "POL_no_party_leader"
+    }
+}
+
+defined_text = {
+	name = get_RIGHT_leader
+	text = {
+		trigger = {
+			has_country_flag = POL_pawel_kukiz_is_RIGHT_leader
+		}
+		localization_key = "POL_pawel_kukiz"
+	}
+	text = {
+        localization_key = "POL_no_party_leader"
+    }
+}
+
+defined_text = {
+	name = get_LEFT_leader
+	text = {
+		trigger = {
+			has_country_flag = POL_leszek_miller_is_LEFT_leader
+		}
+		localization_key = "POL_leszek_miller"
+	}
+	text = {
+        localization_key = "POL_no_party_leader"
+    }
+}
+
+defined_text = {
+	name = get_PSL_leader
+	text = {
+		trigger = {
+			has_country_flag = POL_janus_piechocinski_is_PSL_leader
+		}
+		localization_key = "POL_janus_piechocinski"
+	}
+	text = {
+        localization_key = "POL_no_party_leader"
+    }
+}
+
+defined_text = {
+	name = get_initial_army_focus_name
+	text = {
+		trigger = {
+			has_country_flag = POL_the_need_for_nato_flag
+		}
+		localization_key = "POL_the_need_for_NATO"
+	}
+	text = {
+        localization_key = "POL_the_eagle_soars"
+    }
+}
+
+defined_text = {
+	name = get_initial_army_focus_desc
+	text = {
+		trigger = {
+			has_country_flag = POL_the_need_for_nato_flag
+		}
+		localization_key = "POL_the_need_for_NATO_desc"
+	}
+	text = {
+        localization_key = "POL_the_eagle_soars_desc"
+    }
+}
+
+defined_text = {
+	name = POLAND_get_bill_in_sejm
+	text = {
+		trigger = {
+			has_country_flag = POLAND_current_bill_in_sejm_is_strategy_for_energy_security_and_environment
+		}
+		localization_key = "POL_strategy_for_energy_security_and_environment"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = POLAND_will_bill_pass
+	text = {
+		trigger = {
+			check_variable = { var = POL.POLAND_votes_for_the_bill value = POL.POLAND_required_votes compare = greater_than_or_equals }
+		}
+		localization_key = "POLAND_bill_will_pass"
+	}
+	text = {
+        localization_key = "POLAND_bill_will_fail"
+    }
+}
+
+defined_text = {
+	name = POLAND_get_PO_votes_for_bill
+	text = {
+		trigger = {
+			check_variable = { POL.POL_PO_seats > 0 }
+		}
+		localization_key = "POLAND_PO_voting_intentions_loc"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = POLAND_get_PiS_votes_for_bill
+	text = {
+		trigger = {
+			check_variable = { POL.POL_PiS_seats > 0 }
+		}
+		localization_key = "POLAND_PiS_voting_intentions_loc"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = POLAND_get_RIGHT_votes_for_bill
+	text = {
+		trigger = {
+			check_variable = { POL.POL_RIGHT_seats > 0 }
+		}
+		localization_key = "POLAND_RIGHT_voting_intentions_loc"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = POLAND_get_LEFT_votes_for_bill
+	text = {
+		trigger = {
+			check_variable = { POL.POL_LEFT_seats > 0 }
+		}
+		localization_key = "POLAND_LEFT_voting_intentions_loc"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = POLAND_get_PSL_votes_for_bill
+	text = {
+		trigger = {
+			check_variable = { POL.POL_PSL_seats > 0 }
+		}
+		localization_key = "POLAND_PSL_voting_intentions_loc"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = POLAND_get_OTHER_votes_for_bill
+	text = {
+		trigger = {
+			check_variable = { POL.POL_OTHER_seats > 0 }
+		}
+		localization_key = "POLAND_OTHER_voting_intentions_loc"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = POLAND_get_rightist_party_event_picture
+	text = {
+		trigger = {
+			has_country_flag = POL_rightist_party_is_kukiz
+		}
+		localization_key = "GFX_report_event_POL_kukiz_15_rally"
+	}
+	text = {
+        localization_key = "GFX_report_event_POL_konfederacja"
+    }
+}
+
+defined_text = {
+	name = POL_get_beryl_focus_tt
+	text = {
+		trigger = {
+			has_idea = POL_beryl_modernisation_package_hidden_idea
+		}
+		localization_key = "POL_beryl_modernisation_package_tt_2"
+	}
+	text = {
+		trigger = {
+			has_idea = POL_cost_effective_designs_hidden_idea
+		}
+		localization_key = "POL_cost_effective_designs_tt_2"
+	}
+	text = {
+		trigger = {
+			has_idea = POL_cost_effective_designs_the_eagle_soars_hidden_idea
+		}
+		localization_key = " POL_cost_effective_designs_tt_the_eagle_soars_2"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = POL_get_land_forces_modifier_name
+	text = {
+        localization_key = "POL_outdated_land_forces"
+    }
+}
+defined_text = {
+	name = POL_get_land_forces_modifier_desc
+	text = {
+        localization_key = "POL_outdated_land_forces_desc"
+    }
+}
+
+defined_text = {
+	name = POL_get_air_force_modifier_name
+	text = {
+        localization_key = "POL_outdated_air_force"
+    }
+}
+defined_text = {
+	name = POL_get_air_force_modifier_desc
+	text = {
+        localization_key = "POL_outdated_air_force_desc"
+    }
+}
+
+defined_text = {
+	name = POL_get_navy_modifier_name
+	text = {
+        localization_key = "POL_outdated_navy"
+    }
+}
+defined_text = {
+	name = POL_get_navy_modifier_desc
+	text = {
+        localization_key = "POL_outdated_navy_desc"
+    }
+}

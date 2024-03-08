@@ -1,0 +1,582 @@
+﻿#RANDOM POLAND ARTICLES I MIGHT USE FOR CONTENT
+#https://www.aljazeera.com/news/2015/9/30/poland-to-bring-in-exiled-ethnic-poles		-> tens of thousands of Poles from Ukraine, Kazakhstan, return to Poland
+#https://www.reuters.com/article/us-poland-government-kopacz-idUSKBN0HA0Z320140915/
+#https://www.reuters.com/article/poland-government-kopacz-idUSL5N0YX3T920150611/		-> Waitergate and later purge
+#https://www.macrotrends.net/countries/POL/poland/military-spending-defense-budget		-> use this for budget stuff
+#https://www.lse.ac.uk/GranthamInstitute/wp-content/uploads/2015/05/POLAND.pdf 			-> Poland climate change bill
+#https://wiiw.ac.at/different-choices-divergent-paths-poland-and-ukraine-dlp-6419.pdf	-> analysis of polish and ukrainian economic development
+
+
+
+capital = 427
+add_offsite_building = { type = industrial_complex level = 2 }
+add_offsite_building = { type = arms_factory level = 2 }
+
+load_nato_doctrine = yes
+
+set_country_flag = POL_donald_tusk_is_current_pm_flag
+add_dynamic_modifier = { modifier = POL_donald_tusk_dynamic_modifier }
+add_dynamic_modifier = { modifier = POL_ewa_kopacz_dynamic_modifier }
+add_dynamic_modifier = { modifier = POL_beata_szydlo_dynamic_modifier }
+add_dynamic_modifier = { modifier = POL_mateusz_morawiecki_dynamic_modifier }
+
+set_variable = { ewa_kopacz_stability_weekly = -0.001 }
+set_variable = { ewa_kopacz_political_power_gain = -0.1 }
+set_country_flag = ewa_kopacz_shoes_to_fill_trait
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "POL_2014_nsb"
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_oob = "POL_2014"
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "POL_2014_navy_mtg"
+	else = {
+		set_naval_oob = "POL_2014_navy"
+	}
+}
+2022.1.1={
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "POL_2022_navy_mtg"
+		else = {
+			set_naval_oob = "POL_2022_navy"
+		}
+	}
+}
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = civic_platform
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = poland_pis_party
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = poland_kukiz_15
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = poland_democratic_left_alliance
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = poland_PSL
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+#DONT REMOVE
+set_country_flag = is_in_european_union
+#set_variable = { pro_eu = 72 }
+#set_variable = { sce_eu =  24 }
+#set_variable = { neu_eu =  4 }
+#clamp_variable = { var = pro_eu min = 0 max = 100 }
+#clamp_variable = { var = sce_eu min = 0 max = 100 }
+#clamp_variable = { var = neu_eu min = 0 max = 100 }
+set_variable = {
+	gdp = 515.764
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = "USA"
+    value = 200
+}
+
+#PO
+recruit_character = POL_donald_tusk
+recruit_character = POL_radoslaw_sikorski
+recruit_character = POL_jacek_rostowski
+recruit_character = POL_grzegorz_schetyna
+
+#PiS
+recruit_character = POL_jaroslaw_kaczynski
+recruit_character = POL_mateusz_morawiecki
+recruit_character = POL_antoni_macierewicz
+
+#RIGHT
+recruit_character = POL_grzegorz_braun
+
+#PSL
+recruit_character = POL_wladyslaw_kosiniak_kamysz
+recruit_character = POL_waldemar_pawlak
+
+#Generals
+recruit_character = POL_mieczyslaw_gocul
+recruit_character = POL_leszek_surawski
+recruit_character = POL_rajmund_andrzejczak
+recruit_character = POL_tomasz_piotrowski
+recruit_character = POL_waldemar_skrzypczak
+recruit_character = POL_roman_polko
+recruit_character = POL_stanislaw_koziej
+recruit_character = POL_piotr_trytek
+
+
+add_ideas = POL_mieczyslaw_gocul
+
+add_ideas = {
+	eu_member
+	SLO_visegrad_member
+	POL_continued_growth
+	
+#	POL_recovered_territories			#missing GFX
+	
+#	POL_PO_PSL_coalition
+	
+	volunteer_only
+	liberal_democracy
+	western_economy
+	free_press
+	free_trade_unions
+	western_aligned
+
+	religion_law_religious
+	womens_rights_traditional_values
+	lgbtq_rights_behind_closed_doors
+	minority_rights_full_equality
+	nationalism_laws_interventionist
+	firearm_laws_restricted
+	alchohol_narcotics_laws_largely_regulated
+}
+
+
+set_research_slots = 3
+set_stability = 0.05
+set_war_support = 0.37
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+    apc_equipment_1 = 1
+	support_weapons = 1
+	motorised_infantry = 1
+	infantry_anti_tank = 1
+	infantry_anti_air = 1
+
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	basic_train = 1
+
+	modern_tank_doctrine = 1
+	ifv = 1
+	apc = 1
+
+	gw_artillery = 1
+	rocket_artillery = 1
+
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	
+	early_destroyer = 1
+	early_coastal_patrol_ship = 1
+	basic_coastal_patrol_ship = 1
+	basic_battery = 1
+	basic_torpedo = 1
+	mtg_transport = 1
+	basic_naval_mines = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		t_64 = 1
+		t_64av = 1
+		t_72 = 1
+		t_72b = 1
+		t_80 = 1
+		t_90 = 1
+		leopard2 = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		t64_chasis_tech = 1
+		t72_chasis_tech = 1
+		t80_chasis_tech = 1
+		t90_chasis_tech = 1
+		leopard2_chasis_tech = 1
+		armor_tech_1 = 1
+		engine_tech_1 = 1
+		gun_tech_1 = 1
+		tank_module_tech_1 = 1
+	}
+}
+
+set_convoys = 342
+
+set_politics = {
+	ruling_party = neoliberal
+	last_election = "2011.10.9"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neoconservative = 32
+	eastern_liberal = 9
+	populist = 10
+	libertarian = 3
+	social_democracy = 6
+	neoliberal = 34
+	ultranationalist = 4
+	eastern_conservative = 2
+}
+
+add_equipment_to_stockpile = { type = t_72_equipment amount = 642 }
+add_equipment_to_stockpile = { type = t_90_equipment amount = 126 }
+add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 240 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 620 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 126 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 256 }
+add_equipment_to_stockpile = { type = infantry_anti_tank_equipment amount = 186 }
+add_equipment_to_stockpile = { type = infantry_anti_air_equipment amount = 186 }
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 72 }
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "T-64"
+		type = t64_chasis
+		obsolete = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "T-64av"
+		type = t64_chasis
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = armor_era
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+	create_equipment_variant = {
+		name = "T-72"
+		type = t72_chasis
+		obsolete = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "T-72b"
+		type = t72_chasis
+		obsolete = no
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret2
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = armor_era
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+	create_equipment_variant = {
+		name = "T-80"
+		type = t80_chasis
+		obsolete = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = armor_era
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 5
+		}
+	}
+	create_equipment_variant = {
+		name = "T-80bv"
+		type = t80_chasis
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_modern_cannon2
+			turret_type_slot = tank_modern_tank_turret2
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = armor_era
+			special_type_slot_3 = smoke_launchers
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 5
+		}
+	}
+	create_equipment_variant = {
+		name = "T-90"
+		type = t90_chasis
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_modern_cannon2
+			turret_type_slot = tank_modern_tank_turret2
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = armor_era
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 5
+		}
+	}
+	create_equipment_variant = {
+		name = "Leopard 2PL"
+		type = leopard2_chasis
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_modern_cannon2
+			turret_type_slot = tank_modern_tank_turret3
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = stabilizer
+			special_type_slot_3 = smoke_launchers
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 5
+		}
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+
+	set_technology = {
+		early_fighter = 1
+		basic_fighter = 1
+	}
+
+	add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 46 }
+	add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 32 }
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+
+	set_technology = {
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		iw_large_airframe = 1
+		bombs1 = 1
+		aa_lmg = 1
+		aa_mmg = 1
+		aa_am1 = 1
+		range_improvements = 1
+	}
+}
+
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+
+	create_equipment_variant = {
+		name = "Su-27SM"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_mg
+			fixed_auxiliary_weapon_slot_1 = fox2_1
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = air_air_radar_1
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		name = "F-16"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_mg
+			fixed_auxiliary_weapon_slot_1 = fox2_1
+			fixed_auxiliary_weapon_slot_2 = fox3_1
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = air_air_radar_1
+		}
+		obsolete = no
+	}
+
+
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_0
+		variant_name = "Su-27SM"
+		amount = 46
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_1
+		variant_name = "F-16"
+		amount = 32
+		producer = POL
+	}
+}
+
+set_country_flag = POL_donald_tusk_is_PO_leader
+set_country_flag = POL_beata_szydlo_is_PiS_leader
+set_country_flag = POL_pawel_kukiz_is_RIGHT_leader
+set_country_flag = POL_leszek_miller_is_LEFT_leader
+set_country_flag = POL_janus_piechocinski_is_PSL_leader
+
+set_variable = { POL.cost_of_lobby_decisions = 40 }
+
+set_variable = { POL_PO_seats = 207 }
+set_variable = { POL_PiS_seats = 157 }
+set_variable = { POL_RIGHT_seats = 0 }
+set_variable = { POL_LEFT_seats = 27 }
+set_variable = { POL_PSL_seats = 28 }
+set_variable = { POL_OTHER_seats = 0 }
+
+set_country_flag = PO_in_power
+set_country_flag = PiS_in_opposition
+set_country_flag = PSL_in_power	
+
+POL_get_non_aligned_seats = yes
+POL_get_sejm_seats = yes
+POL_get_government_majority_status = yes
+
+set_country_flag = POL_rightist_party_is_kukiz
+set_country_flag = POL_leftist_party_is_democratic_left_alliance
+2015.1.1={
+	clr_country_flag = POL_leftist_party_is_democratic_left_alliance
+	set_country_flag = POL_leftist_party_is_united_left
+}
+2016.1.1={
+	clr_country_flag = POL_leftist_party_is_united_left
+	set_country_flag = POL_leftist_party_is_lewica
+}
+2018.10.1={
+	clr_country_flag = POL_rightist_party_is_kukiz
+	set_country_flag = POL_rightist_party_is_konfederacja
+}
+
+2022.1.1 = {
+	set_politics = {
+		ruling_party = neoconservative
+		last_election = "2019.10.13"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	POL_make_mateusz_morawiecki_pm = yes
+	POL_make_andrzej_duda_president = yes
+	
+	remove_ideas = POL_PO_PSL_coalition
+	
+	set_variable = { POL_PO_seats = 134 }
+	set_variable = { POL_PiS_seats = 235 }
+	set_variable = { POL_RIGHT_seats = 11 }
+	set_variable = { POL_LEFT_seats = 49 }
+	set_variable = { POL_PSL_seats = 30 }
+	set_variable = { POL_OTHER_seats = 0 }
+	
+	POL_clr_party_flags = yes
+	set_country_flag = PO_in_opposition
+	set_country_flag = PiS_in_power
+	set_country_flag = PSL_in_opposition
+	set_country_flag = LEFT_in_opposition
+	
+	POL_get_non_aligned_seats = yes
+	POL_get_sejm_seats = yes
+	POL_get_government_majority_status = yes
+}

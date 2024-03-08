@@ -1,0 +1,50 @@
+on_actions={	
+	on_startup = {
+		effect = {
+			POL = { 
+				if ={ 
+					limit = { has_start_date < 2022.01.01 } 
+#					country_event = { id = atd_poland.1 days = 1740 random_days = 35  }		#Konfederacja formed
+#					country_event = { id = atd_poland.3 days = 360 random_days = 24  }		#Choose PiS candidate
+#					country_event = { id = atd_poland.4 days = 478 }						#2015 Presidential Election
+#					country_event = { id = atd_poland.5 days = 270 }						#Tusk leaves
+#					country_event = { id = atd_poland.13 days = 800 random_days = 120  }	#Lewica formed
+#					country_event = { id = atd_poland.16 days = 690 random_days = 122 }	 	#Migrant crisis
+#					country_event = { id = atd_poland.20 days = 420 random_days = 100 }		#Rise of Kukiz'15
+#					country_event = { id = poland_election.1 days = 285 random_days = 3 }	#Prepare for 2014 elections
+				}
+				
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment_1
+					amount = 3000
+					producer = POL
+				}
+				add_equipment_to_stockpile = { 
+					type = infantry_anti_air_equipment_1
+					amount = 320
+					producer = POL
+				}
+				add_equipment_to_stockpile = { 
+					type = infantry_anti_tank_equipment_1
+					amount = 340
+					producer = POL
+				}
+				add_equipment_to_stockpile = { 
+					type = support_equipment_1
+					amount = 500
+					producer = POL
+				}
+				add_equipment_to_stockpile = { 
+					type = mechanized_equipment_1
+					amount = 310
+					producer = POL
+				}
+				add_equipment_to_stockpile = { 
+					type = apc_equipment_1
+					amount = 600
+					producer = POL
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_UKR_rada_seat"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_rada_party.dds"
+		noOfFrames = 20
+	}
+
+	spriteType = {
+		name = "GFX_ENG_UKR_button"
+		texturefile = "gfx/interface/decisions/ukraine/english_ukraine_button.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_decision_UKR_open_sotn_bg"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_open_sotn_bg.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_open_sotn_button"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_open_sotn_button.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_arrow"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_arrow.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_arrow_backwards"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_arrow_backwards.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_nationalists_picture"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_nationalists_decision_picture.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_liberals_picture"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_liberals_decision_picture.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_russians_picture"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_russians_decision_picture.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_oligarchs_picture"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_oligarchs_decision_picture.png"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_outline_button"
+		texturefile = "gfx/interface/UKR_outline_button.png"
+	}
+	spriteType = {
+		name = "GFX_ukraine_tab_button_123x34"
+		texturefile = "gfx/interface/decisions/ukraine/ukraine_tab_button_123x34.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_open_sotn_bg"
+		texturefile = "gfx/interface/decisions/ukraine/UKR_open_sotn_bg.png"
+	}
+}
